@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { categories, siteInfo } from "@/content/support-content";
@@ -16,13 +17,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center rounded-md bg-terracotta text-sm font-bold text-cream">
-            B
-          </span>
-          <span className="text-lg font-bold tracking-tight text-ink">
-            {siteInfo.brandName}
-          </span>
+        <Link href="/" className="flex items-center" aria-label={`${siteInfo.brandName} Support home`}>
+          <Image
+            src={siteInfo.logo}
+            alt={siteInfo.brandName}
+            width={100}
+            height={40}
+            priority
+            className="h-10 w-auto"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
