@@ -43,8 +43,8 @@ export const siteInfo = {
   introBody:
     "Our support centre covers everything from order tracking to product care. Browse by topic, search for answers, or connect directly with our team — we typically respond within a few hours.",
   responseTime: "Our team typically responds within a few hours.",
-  phone: "+91 90610 64554",
-  whatsapp: "+91 90610 64554",
+  phone: "+91 70124 42109",
+  whatsapp: "+91 70124 42109",
   email: "support@blurgvillage.com",
   instagram: "https://instagram.com/blurgvillage",
   storeUrl: "https://blurgvillage.com",
@@ -356,7 +356,7 @@ export const categories: Category[] = [
         title: "How can I contact Blurgvillage?",
         excerpt: "The fastest way to reach our support team.",
         updated: "November 2026",
-        intro: "Email us at support@blurgvillage.com or message us on WhatsApp at +91 90610 64554.",
+        intro: "Email us at support@blurgvillage.com or message us on WhatsApp at +91 70124 42109.",
         steps: [
           "Please include your Order ID for faster support.",
           "For returns, exchanges, or wrong/damaged items, attach your unboxing video (mandatory) and photos of the product and label.",
