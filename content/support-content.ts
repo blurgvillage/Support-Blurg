@@ -321,8 +321,7 @@ export const categories: Category[] = [
         intro:
           "Blurg Originals is the main Blurgvillage collection. It's released in drops: limited releases that arrive in waves rather than a permanent catalogue.",
         steps: [
-          "The collection is relaxed, wearable streetwear in a muted, earthy palette, including denim, cropped tees, and pleated trousers.",
-          "Pieces carry the \"BV\" prefix with one-word colour or texture names, such as BV Frost, BV Latte, and BV Matrix.",
+          "Our collections feature relaxed, wearable streetwear in a muted, earthy palette, including denim, cropped tees, pleated trousers, and more.",
           "Drops are limited, and sold-out items are not restocked.",
           "Please check the measurements on each product page before ordering.",
         ],
@@ -337,7 +336,7 @@ export const categories: Category[] = [
         steps: [
           "Selects items are sourced products, so many carry another brand's original label and tags rather than Blurgvillage branding.",
           "The brand details are shown in each product's images and description.",
-          "The same shopping terms apply as for Blurg Originals: free shipping, the same delivery times, a 7-day return window, a mandatory unboxing video, and no returns on sale items.",
+          "The same shopping terms apply as for Blurg Originals: free shipping, the same delivery times, a 7-day return window, a mandatory unboxing video, and no returns on offer sale items.",
         ],
       },
       {

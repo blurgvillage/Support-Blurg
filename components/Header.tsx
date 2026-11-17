@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { categories, siteInfo } from "@/content/support-content";
+import TrackOrderButton from "@/components/TrackOrderButton";
 
 const navItems = [
   { label: "Help Center", href: "/" },
@@ -17,7 +18,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center" aria-label={`${siteInfo.brandName} Support home`}>
+        <a href={siteInfo.storeUrl} className="flex items-center" aria-label={`Go to ${siteInfo.brandName} store`}>
           <Image
             src={siteInfo.logo}
             alt={siteInfo.brandName}
@@ -26,7 +27,7 @@ export default function Header() {
             priority
             className="h-10 w-auto"
           />
-        </Link>
+        </a>
 
         <nav className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
@@ -39,6 +40,7 @@ export default function Header() {
               <span className="absolute -bottom-1 left-0 h-px w-0 bg-terracotta transition-all group-hover:w-full" />
             </Link>
           ))}
+          <TrackOrderButton variant="nav" />
         </nav>
 
         <div className="flex items-center gap-3">
@@ -72,6 +74,9 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
+            <div>
+              <TrackOrderButton variant="nav" />
+            </div>
             <Link
               href="/contact"
               onClick={() => setOpen(false)}

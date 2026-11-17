@@ -4,6 +4,7 @@ import { categories, quickLinks, siteInfo, allArticlesFlat } from "@/content/sup
 import SearchBar from "@/components/SearchBar";
 import CategoryCard from "@/components/CategoryCard";
 import FaqAccordion from "@/components/FaqAccordion";
+import TrackOrderButton from "@/components/TrackOrderButton";
 
 export default function Home() {
   return (
@@ -34,13 +35,16 @@ export default function Home() {
             ))}
           </div>
 
-          <Link
-            href="/contact"
-            className="mt-8 inline-flex items-center gap-1.5 rounded-lg bg-ink px-5 py-2.5 text-sm font-semibold text-cream transition hover:bg-terracotta-dark"
-          >
-            <Headphones size={15} />
-            Contact Support
-          </Link>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <TrackOrderButton />
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-ink bg-paper px-6 py-3 text-sm font-semibold text-ink transition hover:bg-ink hover:text-cream"
+            >
+              <Headphones size={15} />
+              Contact Support
+            </Link>
+          </div>
         </div>
       </section>
 

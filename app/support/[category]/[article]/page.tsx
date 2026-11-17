@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import TrackOrderCard from "@/components/TrackOrderCard";
 import { ChevronRight, ArrowRight } from "lucide-react";
 import { categories, getArticle } from "@/content/support-content";
 import HelpfulWidget from "@/components/HelpfulWidget";
@@ -128,6 +129,8 @@ export default function ArticlePage({
                 <ArrowRight size={15} />
               </Link>
             </div>
+
+            <TrackOrderCard />
           </aside>
         </div>
       </div>

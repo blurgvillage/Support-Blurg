@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import TrackOrderCard from "@/components/TrackOrderCard";
 import { ChevronRight, ArrowRight, MessageCircle } from "lucide-react";
 import { categories, getCategory } from "@/content/support-content";
 import { iconMap } from "@/components/icon-map";
@@ -80,6 +81,8 @@ export default function CategoryPage({ params }: { params: { category: string } 
                 <ArrowRight size={15} />
               </Link>
             </div>
+
+            <TrackOrderCard />
 
             <div className="rounded-2xl border border-line bg-paper p-6 shadow-sm">
               <p className="text-xs font-semibold uppercase tracking-widest text-ink-3">
